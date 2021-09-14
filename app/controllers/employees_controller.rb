@@ -2,6 +2,14 @@ class EmployeesController < ApplicationController
   expose :employees, ->{ Employee.all }
 
   def create
-    binding.pry
+    Employee.create(employee_params)
+
+    redirect_to employees_path
+  end
+
+  private
+
+  def employee_params
+    params.require(:employee).permit(:name)
   end
 end
