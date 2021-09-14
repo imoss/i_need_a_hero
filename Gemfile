@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'haml'
 gem 'haml-rails'
+gem 'decent_exposure', '~> 3.0'
+gem 'pry'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
