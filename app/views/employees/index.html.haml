@@ -1,5 +1,6 @@
 .main
   - employees.each do |employee|
     = employee.name
+    = link_to 'Edit', edit_employee_path(employee)
     %br
   = link_to 'Create an Employee', new_employee_path

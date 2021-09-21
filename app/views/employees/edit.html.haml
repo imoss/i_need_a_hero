@@ -1,0 +1,6 @@
+%h2= employee_edit_title(employee)
+
+= form_for employee, url: employees_path, method: :post do |form|
+  = form.label :name
+  = form.text_field :name
+  = form.submit

@@ -1,5 +1,6 @@
 class EmployeesController < ApplicationController
   expose :employees, ->{ Employee.all }
+  expose :employee
 
   def create
     Employee.create(employee_params)
