@@ -1,5 +1,5 @@
 module EmployeesHelper
-  def employee_edit_title(employee)
-    "You are editing #{employee.name}"
+  def employee_name(employee)
+    EmployeePresenter.new(employee, self).present
   end
 end
